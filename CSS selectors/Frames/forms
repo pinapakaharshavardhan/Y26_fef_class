@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML Form</title>
+</head>
+<body>
+  <form action="/submit-form" method="POST">
+    <div>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="8" required>
+    </div>
+    <div>
+      <p>Account Type:</p>
+      <input type="radio" id="personal" name="account_type" value="personal" checked>
+      <label for="personal">Personal</label>
+      
+      <input type="radio" id="business" name="account_type" value="business">
+      <label for="business">Business</label>
+    </div>
+    <div>
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="in">India</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </div>
+    <div>
+      <label for="message">Additional Notes:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea>
+    </div>
+    <div>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the terms and conditions</label>
+    </div>
+    <div>
+      <button type="submit">Submit Form</button>
+    </div>
+  </form>
+
+</body>
+</html>
